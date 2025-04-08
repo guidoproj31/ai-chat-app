@@ -38,8 +38,10 @@ export default function ChatInput({ onSendMessage, isLoading = false }: ChatInpu
         </button>
       </div>
       <p className="text-gray-500 mt-2 text-sm">
-        Example: "What does Zapps AI do?" or "Tell me about the company"
+        {`Example: "What does Zapps AI do?" or "Tell me about the company"`}
       </p>
     </form>
   );
 }
+
+
