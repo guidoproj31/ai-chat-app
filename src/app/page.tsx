@@ -31,7 +31,7 @@ export default function Home() {
     setMessages(prev => [...prev, { text: message, isBot: false }]);
     
     try {
-      const response = await axios.post('http://localhost:5678/webhook/67e404b8-4ec9-42c1-97d2-736fab4e5164', {
+      const response = await axios.post(process.env.NEXT_PUBLIC_WEBHOOK_URL!, {
         message: message
       });
 
@@ -92,6 +92,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
